@@ -1,9 +1,9 @@
-module.exports = function component() {
+module.exports = function component(id, height, width) {
   var canvas = document.createElement('canvas');
 
-  canvas.id = 'canvasTetris';
-  canvas.height = 600;
-  canvas.width = 600;
+  canvas.id = id;
+  canvas.height = height;
+  canvas.width = width;
   canvas.style.border = 'gray 1px solid';
   canvas.innerHTML = 'Error. Canvas didn\'t work.';
 
